@@ -1,0 +1,48 @@
+.bg-green {
+  background-color: #08D1AB;
+}
+
+.bg-header {
+  background-image: url('../img/bg-header-01.jpg');
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: #ffffff;
+  text-align: center;
+  height: 500px;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+}
+
+h6 {
+  font-weight: 500;
+}
+
+.texto-principal {
+  margin-top: 18rem;
+}
+
+.carousel-indicators {
+  bottom: -62px;
+}
+
+.carousel-indicators li{
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  background-color: #08D1AB;
+
+}
+
+
+.oscuro {
+  background: #000f08;
+  color: #ffffff;
+}
+
+.oscuro a{
+  color: #ffffff;
+  text-decoration: none;
+}
