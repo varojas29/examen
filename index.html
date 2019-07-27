@@ -23,9 +23,9 @@
 
   <body>
 <!--NAVEGADOR-->
-<nav class="navbar navbar-expand-md navbar-dark bg-green">
+<nav class="navbar navbar-expand-md navbar-dark bg-green fixed-top">
   <div class="container">
-  <a class="navbar-brand" href="#"><img src="assets/img/LOGO-VAROJAS.png" alt="" height="30rem"></a>
+  <a class="navbar-brand" href="#inicio"><img src="assets/img/LOGO-VAROJAS.png" alt="" height="30rem"></a>
       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
       <span class="navbar-toggler-icon"></span>
     </button>
@@ -54,7 +54,7 @@
 <div class="texto-principal">
   <h1 class="Font-weight-bold">VAROJAS</h1>
     <hr class="border-top border-white" width="20%"/>
-  <h3 class="font-weight-regular">Diseñadora integral</h3>
+  <h3 id="inicio" class="font-weight-regular">Diseñadora integral</h3>
   </div>
 </section>
 
@@ -81,7 +81,7 @@
 
 <!--INFO COLUMNAS-->
 
-<section id="sobre-mi" class="container pt-5 pb-5">
+<section id="sobre-mi" class="container pt-5 pb-5 d-none d-sm-block">
   <div class="row">
     <div class="col-md-6">
       <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
@@ -90,7 +90,7 @@
     </div>
 
 
-  <div class="col-md-6">
+  <div class="col-md-6 d-none d-sm-block">
     <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 
     Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
@@ -98,8 +98,12 @@
 
   </div>
 
+</section>
 <!--MI EXPERIENCIA-->
-<div id="mi-experiencia" class="mi experiencia pt-5 pb-5 text-center">
+
+<section class="experiencia">
+
+<div id="mi-experiencia" class="mi experiencia pt-5 pb-5 text-center d-none d-sm-block">
   <h2  class="font-weight-bold">MI EXPERIENCIA</h2>
   <hr width="50%" class=/>
 
@@ -169,15 +173,18 @@
 
 
 </div>
-
+</section>
 <!--MIS TRABAJOS-->
 <!--GRILLAS-->
+<section class="grilla">
+
 
 <div id="mis-trabajos" class="mis trabajos pt-5 mb-5 text-center">
   <h2 class="font-weight-bold">MIS TRABAJOS</h2>
   <hr width="50%" class=/>
   <h3 id="graficos" class="pb-5">GRÁFICOS</h3>
 </div>
+
   <div class="container">
     <div class="row">
       <div class="col-md-4">
@@ -186,7 +193,7 @@
         <div class="card-body">
           <h5 class="card-title">Colección Fiesta - Navidad TOP 2016</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-info">Ver más</a>
+          <a href="#" class="btn bg-green text-white">Ver más</a>
         </div>
         </div>
       </div>
@@ -197,7 +204,7 @@
         <div class="card-body">
           <h5 class="card-title">Digipack EP <br> AMC Funk</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-info">Ver más</a>
+          <a href="#" class="btn bg-green text-white">Ver más</a>
         </div>
         </div>
       </div>
@@ -208,7 +215,7 @@
         <div class="card-body">
           <h5 class="card-title">Folletos productos industriales Marienberg</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-info">Ver más</a>
+          <a href="#" class="btn bg-green text-white">Ver más</a>
         </div>
         </div>
       </div>
@@ -225,7 +232,7 @@
         <div class="card-body">
           <h5 class="card-title">Packaging <br> Marvel TOP</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-info">Ver más</a>
+          <a href="#" class="btn bg-green text-white">Ver más</a>
         </div>
         </div>
       </div>
@@ -236,7 +243,7 @@
         <div class="card-body">
           <h5 class="card-title">Packaging <br> colección Graffiti TOP</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-info">Ver más</a>
+          <a href="#" class="btn bg-green text-white">Ver más</a>
         </div>
         </div>
       </div>
@@ -247,27 +254,30 @@
         <div class="card-body">
           <h5 class="card-title"> Packaging <br> Under Skin by TOP</h5>
           <p class="card-text">Some quick example text to build on the card title and make up the bulk of the card's content.</p>
-          <a href="#" class="btn btn-info">Ver más</a>
+          <a href="#" class="btn bg-green text-white">Ver más</a>
         </div>
         </div>
       </div>
     </div>
 
     </div>
-
+</section>
 <!--Typeform-->
+<section class="typeform">
 
-<div class="typeform-widget" data-url="https://victoria256306.typeform.com/to/UGigIh" style="width: 100%; height: 650px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=UGigIh&utm_source=typeform.com-14394465-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+<div class="pt-4">
+<div class="typeform-widget" data-url="https://victoria256306.typeform.com/to/UGigIh" style="width: 100%; height: 450px;"></div> <script> (function() { var qs,js,q,s,d=document, gi=d.getElementById, ce=d.createElement, gt=d.getElementsByTagName, id="typef_orm", b="https://embed.typeform.com/"; if(!gi.call(d,id)) { js=ce.call(d,"script"); js.id=id; js.src=b+"embed.js"; q=gt.call(d,"script")[0]; q.parentNode.insertBefore(js,q) } })() </script> <div style="font-family: Sans-Serif;font-size: 12px;color: #999;opacity: 0.5; padding-top: 5px;"> powered by <a href="https://admin.typeform.com/signup?utm_campaign=UGigIh&utm_source=typeform.com-14394465-Basic&utm_medium=typeform&utm_content=typeform-embedded-poweredbytypeform&utm_term=ES" style="color: #999" target="_blank">Typeform</a> </div>
+</div>
+</section>
 
-
-
-
-<footer id="contacto" class=" container-fluid text-center mt-5 py-3a bg-green">
-  <a href="https://github.com"><i class="fab fa-github-square fa-3x"></i></a>
-  <a href="https://twitter.com"><i class="fab fa-twitter-square fa-3x"></i></a>
-  <a href="https://www.linkedin.com"><i class="fab fa-linkedin fa-3x"></i></a>
-<p class="font-weight-light pt-3 text-gris"> © 2018 Cuppon LATAM. Todos los derechos reservados.</p>
+<section class="footer">
+<footer id="contacto" class=" container-fluid text-center mt-5 py-3 bg-green">
+  <a href="https://github.com"><i class="fab fa-github-square fa-3x text-white"></i></a>
+  <a href="https://twitter.com"><i class="fab fa-twitter-square fa-3x text-white"></i></a>
+  <a href="https://www.linkedin.com/in/victoria-rojas-a5366455/"><i class="fab fa-linkedin fa-3x text-white"></i></a>
+<p class="font-weight-regular pt-3 text-white"> Victoria Rojas Vera - +56 9 62487701</p>
   </footer>
+</section>
 
     <!--jQuery 3.3.1 normal-->
     <script
@@ -283,5 +293,7 @@
 
     <!--Mi script-->
     <script src="assets/js/script.js"></script>
+
+
   </body>
 </html>
